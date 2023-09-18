@@ -17,15 +17,11 @@ const handleDelete = (id) => {
 
 useEffect(() => {
     console.log("useEffect run");
-    console.log(name);
-    console.log(blogs)
-}, [name]);
+}, []);
 
     return (
         <div className="home">
             <BlogList blogs = {blogs} title="All Blogs" handleDelete = {handleDelete} />
-            <button onClick = {() => setName('fattah')} >Change Name</button>
-            <p>{ name }</p>
         </div>
     );
 }
